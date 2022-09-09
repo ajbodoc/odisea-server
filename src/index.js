@@ -6,7 +6,7 @@ const resolvers = require ( './resolvers' ) ;
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  csrfPrevention: false, 
+  //csrfPrevention: false, 
   dataSources: () => {
     return {
       trackAPI: new TrackAPI()
